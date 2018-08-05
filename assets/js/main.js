@@ -47,7 +47,7 @@
 			$(
 				'<div id="navPanel">' +
 					'<nav>' +
-						'<a href="index.html" class="link depth-0">Home</a>' +
+					//	'<a href="index.html" class="link depth-0">Home</a>' +
 						$('#nav').navList() +
 					'</nav>' +
 				'</div>'
@@ -100,10 +100,10 @@ input.addEventListener('keyup', function() {
 function myFunction(text1,text2) {
   document.getElementById("source").innerHTML = text1;
   document.getElementById("result").innerHTML = text2;
-}
+};
 function copyFunction() {
   var copyText = document.getElementById("myInput");
   copyText.select();
   document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
-}
+//  alert("Copied the text: " + copyText.value);
+};
